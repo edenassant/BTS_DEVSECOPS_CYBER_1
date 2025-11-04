@@ -143,6 +143,8 @@ Les secrets
 https://github.com/edenassant/BTS_DEVSECOPS_CYBER_1/actions/runs/19075095065/attempts/1#summary-54488339792
 ```
 ![img.png](img.png)
+<img width="2184" height="632" alt="image" src="https://github.com/user-attachments/assets/143b73ae-e7e2-43d3-9f00-43aeec2cb8b8" />
+
 
 supp les secrets :
 ```
