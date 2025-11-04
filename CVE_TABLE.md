@@ -79,3 +79,61 @@ d)Push sur ma branche
 ```
 git push origin fix/security-eden
 ```
+POur SNYK:
+
+
+````
+# Installer Snyk
+npm install -g snyk
+
+# Se connecter
+snyk auth
+# Filtrer les failles HIGH et CRITICAL
+snyk test --severity-threshold=high
+
+# Exporter le rapport en JSON
+snyk test --json > snyk-report.json
+````
+
+```
+npm install serialize-javascript@6.0.2 --save
+npm update serialize-javascript
+```
+J'ai repush ensuite et changer les modifs:
+```
+snyk test
+
+Testing /Users/eden/SOUDRY/BTS_DEVSECOPS_CYBER_1...
+
+Organization:      edenassant
+Package manager:   npm
+Target file:       package-lock.json
+Project name:      vuln-node-project
+Open source:       no
+Project path:      /Users/eden/SOUDRY/BTS_DEVSECOPS_CYBER_1
+Licenses:          enabled
+
+✔ Tested 73 dependencies for known issues, no vulnerable paths found.
+
+Next steps:
+- Run `snyk monitor` to be notified about new related vulnerabilities.
+- Run `snyk test` as part of your CI/test.
+```
+
+```
+| Vulnérabilité              | Référence                                                                                                | Correctif appliqué                       | Gravité | OWASP Top-10 (2021) |
+| -------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------- | ------------------- |
+| Cross-site Scripting (XSS) | [SNYK-JS-SERIALIZEJAVASCRIPT-6147607](https://security.snyk.io/vuln/SNYK-JS-SERIALIZEJAVASCRIPT-6147607) | `npm install serialize-javascript@6.0.2` | Medium  | A03 – Injection     |
+
+```
+Gitleaks
+```
+npm install gitleaks
+
+added 1 package, and audited 75 packages in 515ms
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
