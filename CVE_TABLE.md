@@ -138,3 +138,14 @@ added 1 package, and audited 75 packages in 515ms
 found 0 vulnerabilities
 ```
 
+Les secrets
+```
+https://github.com/edenassant/BTS_DEVSECOPS_CYBER_1/actions/runs/19075095065/attempts/1#summary-54488339792
+```
+![img.png](img.png)
+
+supp les secrets :
+```
+rm private-node.pem
+rm -rf evidence/
+```
