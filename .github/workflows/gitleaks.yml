@@ -3,10 +3,10 @@ name: Gitleaks Scan
 on:
   push:
     branches:
-      - fix/security-avital
+      - fix/security-eden
   pull_request:
     branches:
-      - fix/security-avital
+      - fix/security-eden
 
 jobs:
   gitleaks:
